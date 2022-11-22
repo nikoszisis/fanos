@@ -59,7 +59,7 @@ m = Prophet(
 )
 m.fit(df)
 
-future = m.make_future_dataframe(periods=365)
+future = m.make_future_dataframe(periods=30)
 forecast = m.predict(future)
 
 plot_components_plotly(m, forecast).show()
