@@ -62,5 +62,5 @@ m.fit(df)
 future = m.make_future_dataframe(periods=365)
 forecast = m.predict(future)
 
-# plot_plotly(m, forecast)
 plot_components_plotly(m, forecast).show()
+plot_plotly(m, forecast).show()

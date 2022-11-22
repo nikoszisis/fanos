@@ -1,6 +1,7 @@
 # created by virtualenv automatically
-.idea/
 
+# Editors
+.idea/
 
 # Environments
 .env
