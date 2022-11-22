@@ -3,17 +3,17 @@
 Fanos, at the moment, is an Ethereum price prediction tool written in Python.
 <br>
 <br>
-[Prophet](https://facebook.github.io/prophet/) is open source software for forecasting time series data,
+<a href="https://facebook.github.io/prophet/" target="_blank">Prophet</a> is open source software for forecasting time series data,
 <br>released by Facebook’s Core Data Science team.
 <br>
 <br>
-To get the data on Ethereum prices, we’ll be using the [yfinance](https://pypi.org/project/yfinance/) library,
+To get the data on Ethereum prices, we’ll be using the <a href="https://pypi.org/project/yfinance/" target="_blank">yfinance</a> library,
 <br>
 which is a Yahoo! Finance market data downloader.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the necessary packages for Fanos.
+Use the package manager <a href="https://pip.pypa.io/en/stable/" target="_blank">pip</a> to install the necessary packages for Fanos.
 
 
 ```bash
