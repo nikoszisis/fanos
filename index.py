@@ -1,10 +1,11 @@
+from flask import Flask
 import pandas as pd
 import yfinance as yf
 from datetime import datetime
 import plotly.graph_objects as go
 from prophet import Prophet
 from prophet.plot import plot_plotly, plot_components_plotly
-import warnings
+import warnings as warnings
 warnings.filterwarnings('ignore')
 pd.options.display.float_format = '${:,.2f}'.format
 
@@ -13,7 +14,6 @@ start_date = '2016-01-01'
 eth_df = yf.download('ETH-USD', start_date, today)
 
 eth_df.reset_index(inplace=True)
-eth_df.columns
 
 df = eth_df[["Date", "Open"]]
 new_names = {
@@ -62,5 +62,20 @@ m.fit(df)
 future = m.make_future_dataframe(periods=30)
 forecast = m.predict(future)
 
-plot_components_plotly(m, forecast).show()
-plot_plotly(m, forecast).show()
+plot = plot_plotly(m, forecast)
+componentsPlot = plot_components_plotly(m, forecast)
+
+plot.show()
+
+app = Flask(__name__)
+componentsPlot.show()
+
+
+@app.route('/')
+def home():
+    return "Homepage"
+
+
+@app.route('/fanos')
+def components():
+    return "Fanos"

@@ -50,3 +50,4 @@ urllib3==1.26.12
 webargs==8.2.0
 yarl==1.8.1
 yfinance==0.1.87
+Flask~=2.2.2

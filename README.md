@@ -1,6 +1,6 @@
 # Fanos
 
-Fanos, at the moment, is an Ethereum price prediction tool written in Python.
+Fanos, at the moment, is an Ethereum price prediction tool written in Python, which lacks a good training.
 <br>
 <br>
 <a href="https://facebook.github.io/prophet/" target="_blank">Prophet</a> is open source software for forecasting time series data,
