@@ -1,6 +1,6 @@
 # created by virtualenv automatically
 
-# Editors
+# IDE
 .idea/
 
 # Environments
@@ -15,3 +15,7 @@ venv.bak/
 # Vercel
 .vercel
 .vercel/
+
+
+# Python
+__pycache__/
